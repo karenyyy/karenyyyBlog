@@ -1,0 +1,11 @@
+ dj-database-url
+ dj-static
+ django-toolbelt
+ gunicorn
+ psycopg2
+ static3
+ django-haystack
+ Markdown
+ jieba
+ whoosh
+ whitenoise
