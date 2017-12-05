@@ -33,6 +33,7 @@ a:hover, a:focus {
 body {
     color: #444;
     font-family: 'Permanent Marker', cursive;
+    font-size: large;
 }
 
 p {
@@ -192,7 +193,7 @@ img {
 
 .entry-title {
     text-align: center;
-    font-size: 1.9em;
+    font-size: 3.9em;
     margin-bottom: 20px;
     line-height: 1.6;
     padding: 10px 20px 0;
@@ -206,7 +207,7 @@ img {
 }
 
 .entry-content {
-    font-size: 18px;
+    font-size: 38px;
     line-height: 1.9;
     font-weight: 300;
     color: #000;
@@ -223,7 +224,7 @@ img {
 
 .read-more {
     font-family: 'Permanent Marker', cursive;
-    font-weight: 400;
+    font-weight: 600;
     word-spacing: 1px;
     letter-spacing: 0.01em;
     text-align: center;
@@ -310,7 +311,7 @@ img {
 }
 
 .widget-title {
-    font-size: 1.5em;
+    font-size: 3.5em;
     margin-bottom: 20px;
     line-height: 1.6;
     padding: 10px 0 0;
@@ -336,7 +337,7 @@ img {
     position: absolute;
     left: -17px;
     top: 3px;
-    font-size: 16px;
+    font-size: 36px;
     color: #000;
 }
 
