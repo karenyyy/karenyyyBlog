@@ -37,10 +37,10 @@ class Post(models.Model):
 
     views = models.PositiveIntegerField(default=0)
 
-    category = models.ForeignKey(Category, on_delete=True)
+    category = models.ForeignKey(Category, blank=True, null=True, on_delete=models.SET_NULL)
     tags = models.ManyToManyField(Tag, blank=True)
 
-    author = models.ForeignKey(User, on_delete=True)
+    author = models.ForeignKey(User, blank=True, null=True, on_delete=models.SET_NULL)
 
     def __str__(self):
         return self.title
