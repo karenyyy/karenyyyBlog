@@ -39,8 +39,9 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'haystack',
     'blog',
-    'comments'
-]
+    'comments',
+    'pandocfield']
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
