@@ -9,3 +9,4 @@
  jieba
  whoosh
  whitenoise
+ bleach
