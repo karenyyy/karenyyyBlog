@@ -124,7 +124,7 @@ img {
     padding: 0 0 5px 0 !important;
     margin-right: 30px;
     font-family: 'Raleway', sans-serif;
-    font-weight: 600;
+    font-weight: 900;
     font-size: 24px;
 }
 
@@ -197,6 +197,8 @@ img {
     margin-bottom: 20px;
     line-height: 1.6;
     padding: 10px 20px 0;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 900;
 }
 
 .entry-meta {
