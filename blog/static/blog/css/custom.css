@@ -33,6 +33,7 @@ a:hover, a:focus {
 body {
     color: #444;
     font-family: 'Raleway', sans-serif;
+    font-weight: 800;
 }
 
 p {
@@ -105,7 +106,7 @@ img {
 
 .logo h1 {
     margin: 0;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Permanent Marker', cursive;
     font-weight: 300;
 }
 
@@ -123,7 +124,7 @@ img {
     padding: 0 0 5px 0 !important;
     margin-right: 30px;
     font-family: 'Raleway', sans-serif;
-    font-weight: 300;
+    font-weight: 600;
     font-size: 24px;
 }
 
@@ -223,7 +224,7 @@ img {
 
 .read-more {
     font-family: 'Raleway', sans-serif;
-    font-weight: 400;
+    font-weight: 800;
     word-spacing: 1px;
     letter-spacing: 0.01em;
     text-align: center;
