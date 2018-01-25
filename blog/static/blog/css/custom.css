@@ -11,7 +11,6 @@ h4,
 h5,
 h6 {
     margin-top: 0;
-    font-family: 'Ubuntu Mono', monospace;
 }
 
 b {
@@ -215,6 +214,7 @@ img {
     line-height: 1.9;
     font-weight: 300;
     color: #000;
+    font-family: 'Ubuntu Mono', monospace;
 }
 
 .post-category::after,
