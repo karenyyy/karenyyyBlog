@@ -1,5 +1,9 @@
 {% load staticfiles %}
 {% load blog_tags %}
+{% load markup %}
+{{ object.content|markdown }}
+{{ object.content|markdown:"codehilite" }}
+
 <!DOCTYPE html>
 <html>
 <head>

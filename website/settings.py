@@ -40,7 +40,10 @@ INSTALLED_APPS = [
     'haystack',
     'blog',
     'comments',
-    'pandocfield']
+    'pandocfield',
+    'django.contrib.comments',
+    'mptt',
+    'comments']
 
 
 MIDDLEWARE = [
