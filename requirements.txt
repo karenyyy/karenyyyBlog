@@ -10,3 +10,4 @@
  whoosh
  whitenoise
  bleach
+ pygments
