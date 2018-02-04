@@ -11,3 +11,5 @@
  whitenoise
  bleach
  pygments
+ django-contrib-comments
+ mptt
