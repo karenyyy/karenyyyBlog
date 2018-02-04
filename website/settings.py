@@ -37,12 +37,12 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'markup_deprecated',
     'haystack',
     'blog',
     'comments',
     'pandocfield',
-    'mptt']
+    'mptt',
+    'markdown_deux']
 
 
 MIDDLEWARE = [

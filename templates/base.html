@@ -1,8 +1,7 @@
 {% load staticfiles %}
 {% load blog_tags %}
-{% load markup %}
-{{ object.content|markdown }}
-{{ object.content|markdown:"codehilite" }}
+{% markdown_allowed %}
+{% load markdown_deux_tags %}
 
 <!DOCTYPE html>
 <html>

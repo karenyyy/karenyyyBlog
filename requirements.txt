@@ -13,3 +13,4 @@
  pygments
  django-mptt
  django-markup
+ django-markdown-deux
