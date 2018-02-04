@@ -11,5 +11,4 @@
  whitenoise
  bleach
  pygments
- django-contrib-comments-auth
  django-mptt
