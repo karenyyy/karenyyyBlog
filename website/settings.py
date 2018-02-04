@@ -41,8 +41,7 @@ INSTALLED_APPS = [
     'blog',
     'comments',
     'pandocfield',
-    'mptt',
-    'comments']
+    'mptt']
 
 
 MIDDLEWARE = [
