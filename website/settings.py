@@ -41,7 +41,6 @@ INSTALLED_APPS = [
     'blog',
     'comments',
     'pandocfield',
-    'django.contrib.comments',
     'mptt',
     'comments']
 
