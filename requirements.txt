@@ -12,4 +12,4 @@
  bleach
  pygments
  django-contrib-comments
- mptt
+ django-mptt
