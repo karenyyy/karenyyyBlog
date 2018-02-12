@@ -14,3 +14,4 @@
  django-mptt
  django-markup
  django-markdown-deux
+ html5lib

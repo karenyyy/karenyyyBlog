@@ -40,7 +40,6 @@ INSTALLED_APPS = [
     'haystack',
     'blog',
     'comments',
-    'pandocfield',
     'mptt',
     'markdown_deux']
 

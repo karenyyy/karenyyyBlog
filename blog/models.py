@@ -6,7 +6,6 @@ from django.urls import reverse
 from django.utils.six import python_2_unicode_compatible
 from django.utils.html import strip_tags
 
-from pandocfield import PandocField
 
 @python_2_unicode_compatible
 class Category(models.Model):
