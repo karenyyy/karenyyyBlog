@@ -3,11 +3,10 @@ import markdown
 from django.db import models
 from django.contrib.auth.models import User
 from django.urls import reverse
-from django.utils.six import python_2_unicode_compatible
 from django.utils.html import strip_tags
+from django.utils import timezone
 
 
-@python_2_unicode_compatible
 class Category(models.Model):
     name = models.CharField(max_length=100)
 
@@ -15,7 +14,6 @@ class Category(models.Model):
         return self.name
 
 
-@python_2_unicode_compatible
 class Tag(models.Model):
     name = models.CharField(max_length=100)
 
@@ -23,14 +21,13 @@ class Tag(models.Model):
         return self.name
 
 
-@python_2_unicode_compatible
 class Post(models.Model):
-    title = models.CharField(max_length=70)
+    title = models.CharField(max_length=100)
 
     body = models.TextField()
 
-    created_time = models.DateTimeField()
-    modified_time = models.DateTimeField()
+    created_time = models.DateTimeField(default=timezone.now)
+    modified_time = models.DateTimeField(auto_now_add=True)
 
     excerpt = models.CharField(max_length=200, blank=True)
 
@@ -55,15 +52,12 @@ class Post(models.Model):
         self.save(update_fields=['views'])
 
     def save(self, *args, **kwargs):
-        
         if not self.excerpt:
-            
             md = markdown.Markdown(extensions=[
                 'markdown.extensions.extra',
                 'markdown.extensions.codehilite',
             ])
-            
+
             self.excerpt = strip_tags(md.convert(self.body))[:54]
 
-        
         super(Post, self).save(*args, **kwargs)
