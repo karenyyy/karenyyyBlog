@@ -9,11 +9,6 @@ from django.utils.text import slugify
 from .models import Post, Category, Tag
 
 
-# def index(request):
-#     post_list = Post.objects.all()
-#     return render(request, 'blog/index.html', context={'post_list': post_list})
-
-
 class IndexView(ListView):
     model = Post
     template_name = 'blog/index.html'
@@ -102,21 +97,6 @@ class IndexView(ListView):
         return data
 
 
-# def detail(request, pk):
-#     post = get_object_or_404(Post, pk=pk)
-#
-#     post.increase_views()
-#
-#     post.body = markdown.markdown(post.body,
-#                                   extensions=[
-#                                       'markdown.extensions.extra',
-#                                       'markdown.extensions.codehilite',
-#                                       'markdown.extensions.toc',
-#                                   ])
-#
-#     context = {'post': post}
-#     return render(request, 'blog/detail.html', context=context)
-#
 
 class PostDetailView(DetailView):
     model = Post
@@ -142,13 +122,6 @@ class PostDetailView(DetailView):
         return post
 
 
-# def archives(request, year, month):
-#     post_list = Post.objects.filter(created_time__year=year,
-#                                     created_time__month=month
-#                                     )
-#     return render(request, 'blog/index.html', context={'post_list': post_list})
-
-
 class ArchivesView(ListView):
     model = Post
     template_name = 'blog/index.html'
@@ -162,11 +135,6 @@ class ArchivesView(ListView):
                                                                )
 
 
-# def category(request, pk):
-#     cate = get_object_or_404(Category, pk=pk)
-#     post_list = Post.objects.filter(category=cate)
-#     return render(request, 'blog/index.html', context={'post_list': post_list})
-#
 
 class CategoryView(ListView):
     model = Post
