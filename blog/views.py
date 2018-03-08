@@ -7,7 +7,6 @@ from django.shortcuts import render, get_object_or_404
 from django.views.generic import ListView, DetailView
 from django.utils.text import slugify
 
-from comments.forms import CommentForm
 from .models import Post, Category, Tag
 
 
@@ -116,14 +115,7 @@ def detail(request, pk):
                                       'markdown.extensions.toc',
                                   ])
 
-    form = CommentForm()
-
-    comment_list = post.comment_set.all()
-
-    context = {'post': post,
-               'form': form,
-               'comment_list': comment_list
-               }
+    context = {'post': post}
     return render(request, 'blog/detail.html', context=context)
 
 
@@ -149,16 +141,6 @@ class PostDetailView(DetailView):
         post.body = md.convert(post.body)
         post.toc = md.toc
         return post
-
-    def get_context_data(self, **kwargs):
-        context = super(PostDetailView, self).get_context_data(**kwargs)
-        form = CommentForm()
-        comment_list = self.object.comment_set.all()
-        context.update({
-            'form': form,
-            'comment_list': comment_list
-        })
-        return context
 
 
 def archives(request, year, month):

@@ -39,7 +39,6 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'haystack',
     'blog',
-    'comments',
     'mptt',
     'markdown_deux']
 
