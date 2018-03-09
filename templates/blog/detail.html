@@ -1,5 +1,8 @@
 {% extends 'base.html' %}
 
+{% block title %}{{ post.title }}{% endblock %}
+
+
 {% block main %}
     <article class="post post-{{ post.pk }}">
         <header class="entry-header">
@@ -28,6 +31,7 @@
     </article>
 
 {% endblock main %}
+
 {% block toc %}
     <div class="widget widget-content">
         <h3 class="widget-title">Catelog</h3>
