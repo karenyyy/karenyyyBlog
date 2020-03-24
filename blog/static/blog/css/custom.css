@@ -15,7 +15,7 @@ h6 {
 
 b {
     font-weight: 400;
-    font-family: 'Ubuntu Mono', monospace;
+    font-family: "Times New Roman";
 }
 
 a {
@@ -38,7 +38,7 @@ body {
 }
 
 p {
-    font-family: 'Ubuntu Mono', monospace;
+    font-family: "Times New Roman";
     font-weight: 400;
     word-spacing: 1px;
     letter-spacing: 0.01em;
@@ -215,7 +215,8 @@ img {
     line-height: 1.9;
     font-weight: 300;
     color: #000;
-    font-family: 'Ubuntu Mono', monospace;
+    /*font-family: 'Ubuntu Mono', monospace;*/
+    font-family: "Times New Roman";
 }
 
 .post-category::after,
